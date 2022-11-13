@@ -5,6 +5,7 @@
     margin: 0;
     border: none;
 }
+
 body {
     font-family: Lato, sans-serif;
     font-weight: 300;
@@ -13,7 +14,8 @@ body {
 
 /* headings and logo */
 
-h1, h2 {
+h1,
+h2 {
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -28,11 +30,12 @@ h1, h2 {
 /* navigation links */
 
 #menu {
-font-size: 110%;
-letter-spacing: 4px;
+    font-size: 110%;
+    letter-spacing: 4px;
 }
 
-#menu, #logo {
+#menu,
+#logo {
     line-height: 75px;
 }
 
@@ -55,12 +58,19 @@ letter-spacing: 4px;
     border-bottom: 1px solid #3a3a3a;
 }
 
-/* hero image */
+/* hero image & cover text */
 
 #hero-outer {
     height: 600px;
     width: 100%;
     overflow: hidden;
+
+    position: relative;
+}
+
+#cover-text,
+#cover-text h2 {
+    color: #fff;
 }
 
 #hero-image {
@@ -78,10 +88,31 @@ letter-spacing: 4px;
 /* creates the level of zoom for hero image */
 
 @keyframes hero-zoom {
-    from{
-transform: scale(1);
+    from {
+        transform: scale(1);
     }
-    to{
-transform: scale(1.1);
+
+    to {
+        transform: scale(1.1);
     }
+}
+
+#cover-text {
+    font-size: 130%;
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    width: 300px;
+    height: 200px;
+
+    padding-top: 40px;
+    padding-left: 10px;
+
+    background-color: rgba(241, 109, 107, .7);
+
+    bottom: 30px;
+    right: 130px;
+
+    position: absolute;
 }
